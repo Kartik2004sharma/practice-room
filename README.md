@@ -1,6 +1,24 @@
 # Practice Room
 
-A private interview studio for a real friend preparing for junior software engineering interviews and struggling with confidence. Practice answering in your own words, get one concrete strength and improvement grounded in what you wrote, and return with a manageable next step. No invented personal history or testimonials.
+**Your next interview. A little less daunting.**
+
+A private interview studio built for a friend preparing for junior software engineering interviews and struggling with confidence. Practice answering in your own words, get one concrete strength and improvement grounded in what you wrote, and return with a manageable next step.
+
+[Landing page & actual demo](https://Kartik2004sharma.github.io/practice-room/) · [Download the recording](docs/assets/practice-room-demo.mp4) · [Verification](VERIFICATION.md) · [Submission write-up](DEV_SUBMISSION.md)
+
+![Actual Gemma coaching using a labeled synthetic candidate answer](docs/assets/coaching.png)
+
+The public landing page introduces the project and plays a real local-model recording. **The working coach runs locally**, using Gemma through Ollama; the public site does not accept interview answers. No signup, cloud AI key or per-answer API bill.
+
+## What you can do
+
+- Prepare for a target role with an optional job description and mixed, behavioral or technical practice.
+- Answer five questions one at a time, with an optional elapsed timer and no time limit.
+- Receive a strength, improvement, next step, exact answer excerpt and four coaching scores.
+- Practice one optional follow-up, edit answers, skip, cancel a slow request or end early.
+- Review locally saved recaps and delete the practice data from your browser.
+
+The project includes real local inference, a public static showcase, an inspected video and repeatable acceptance checks. Friend testing remains pending; no testimonials, improvement metrics or interview-success claims are invented.
 
 New project started October 3, 2026, for the [Hacktoberfest Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01). The official entry period is October 2, 02:00 UTC through October 5, 06:59 UTC (12:29 PM IST). Organizer eligibility and the owner's acceptance remain pending; any post-deadline commits must be identified here.
 
@@ -89,7 +107,9 @@ See **[VERIFICATION.md](VERIFICATION.md)** for final executed results and limita
 
 The local app at http://127.0.0.1:3000 is the working demo on this machine. `scripts/record-demo.ts` records the actual production app with real configured Gemma using synthetic sample text; it refuses a test adapter. Local recording and review details are in `evidence/DEMO.md`. No static screenshot or adapter recording is called an AI demo.
 
-**[DEV_SUBMISSION.md](DEV_SUBMISSION.md)** follows the official challenge template and required tags. Repository/demo publication URLs and friend handover feedback must be filled only when real. No external publication or DEV submission has been made. Review and final acceptance belong to the project owner.
+**[DEV_SUBMISSION.md](DEV_SUBMISSION.md)** follows the official challenge template and required tags. The owner authorized GitHub publication, a public landing page and DEV submission on October 3. Publication results are recorded in VERIFICATION.md; friend handover feedback remains pending. Final contest eligibility belongs to the organizers.
+
+The landing page lives in `docs/` and uses only local assets. GitHub Pages serves the HTML, CSS, synthetic screenshot and actual MP4 recording; it does not host Ollama or the Express practice server. To preview it locally: `python3 -m http.server 3200 --directory docs`, then open http://127.0.0.1:3200.
 
 ## Project map
 
