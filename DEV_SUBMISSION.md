@@ -1,10 +1,10 @@
 ---
 title: "Practice Room: a private interview coach for a friend"
-published: false
+published: true
 tags: devchallenge, weekendchallenge, hf26challenge
 ---
 
-_This is a submission draft for the [Hacktoberfest Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01). It has not been submitted._
+_Prepared write-up for the [Hacktoberfest Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01). The final edited article was published on October 3: [View the submitted post](https://dev.to/kartik2004sharma/practice-room-a-private-gemma-interview-coach-for-a-friend-3k58)._
 
 ## What I Built
 
@@ -18,7 +18,7 @@ I intentionally label rubric scores as coaching aids. The app does not estimate 
 
 [Local inspected recording](evidence/practice-room-demo.mp4) · [Captured scope and limits](evidence/DEMO.md).
 
-**Owner action before publishing:** upload the inspected actual-model recording in `evidence/practice-room-demo.mp4` to an approved location and insert its real link here. The local working app is http://127.0.0.1:3000; that loopback address is not a public deployment.
+[Public landing page and actual-model video](https://kartik2004sharma.github.io/practice-room/#demo). [Direct MP4](https://kartik2004sharma.github.io/practice-room/assets/practice-room-demo.mp4). The practice coach itself runs locally at http://127.0.0.1:3000.
 
 The recording uses labeled synthetic candidate text. Questions and feedback come from the actual local Gemma model, not browser-test fixtures. See the final demo/verification notes for exactly which steps were captured.
 
@@ -26,7 +26,7 @@ The recording uses labeled synthetic candidate text. Questions and feedback come
 
 [Local source and setup guide](README.md) · [Executed verification](VERIFICATION.md).
 
-**Owner action before publishing:** publish the new `practice-room` repository and insert its real code URL here. No repository URL is invented. The code and setup guide are prepared locally.
+[Public GitHub repository and setup guide](https://github.com/Kartik2004sharma/practice-room).
 
 ## How I Built It
 
@@ -52,4 +52,4 @@ An AI coding assistant helped implement and verify the app. The local plan, boun
 
 Intended category: **Best Use of Gemma**, subject to the owner reviewing the verified local-model results and the organizers' eligibility decision. No unrelated partner technology is claimed.
 
-<!-- Do not publish until the owner reviews the completed demo, fills genuine code/demo links, checks final verification, and approves submission. No friend feedback has been invented. -->
+<!-- Owner authorized publication and submission October 3. Public post uses the required tags and Fully Autonomous AI disclosure. Friend feedback remains pending. -->

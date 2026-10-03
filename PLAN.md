@@ -25,7 +25,7 @@ Initial plan: Ollama with gemma3:1b (official library checked). Final validated 
 - [x] No practice content requests to remote hosts; loopback-only server and same-origin mutation checks.
 - [x] Lint, types, build, browser suite, axe on setup/session/recap, real model check actually run.
 - [x] README: setup, exact model, privacy, limits, evidence. Actual model-flow recording and submission draft using official template.
-- [ ] Code/demo publication links only if real; owner approves external publication. No invented friend feedback.
+- [x] Code/demo publication links only if real; owner approves external publication. No invented friend feedback.
 
 ## Judge and repair bounds
 
@@ -37,4 +37,4 @@ Record actual local model interaction using explicitly labeled synthetic candida
 
 ## Final status
 
-The technical build and local delivery gates passed in iteration 5. The final default is gemma3:4b; real-model evidence is separate from the 15 browser tests and 5 server tests. The inspected local recording and DEV draft are prepared. Public code/demo publication, owner acceptance and real friend handover remain open. See VERIFICATION.md for executed checks and model limits.
+The technical build and local delivery gates passed in iteration 5. The final default is gemma3:4b; real-model evidence is separate from the 15 browser tests and 5 server tests. The inspected local recording and DEV draft are prepared. The owner authorized public GitHub, landing-page and DEV publication October 3; actual URLs and verification are recorded in VERIFICATION.md. Final owner acceptance and real friend handover remain open. See VERIFICATION.md for executed checks and model limits.

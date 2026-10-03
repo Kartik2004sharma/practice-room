@@ -4,7 +4,7 @@
 
 A private interview studio built for a friend preparing for junior software engineering interviews and struggling with confidence. Practice answering in your own words, get one concrete strength and improvement grounded in what you wrote, and return with a manageable next step.
 
-[Landing page & actual demo](https://Kartik2004sharma.github.io/practice-room/) · [Download the recording](docs/assets/practice-room-demo.mp4) · [Verification](VERIFICATION.md) · [Submission write-up](DEV_SUBMISSION.md)
+[Landing page & actual demo](https://Kartik2004sharma.github.io/practice-room/) · [Download the recording](docs/assets/practice-room-demo.mp4) · [Verification](VERIFICATION.md) · [DEV submission](https://dev.to/kartik2004sharma/practice-room-a-private-gemma-interview-coach-for-a-friend-3k58)
 
 ![Actual Gemma coaching using a labeled synthetic candidate answer](docs/assets/coaching.png)
 

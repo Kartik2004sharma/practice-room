@@ -36,6 +36,10 @@ The judge inspected the final real 4B sample and accepted basic coaching quality
 ## Outstanding owner-controlled gates
 
 - Actual friend handover and any consented feedback: not yet obtained; none invented.
-- Public code and demo links: pending owner-approved publication destination; local code/app/media only.
-- DEV submission: draft prepared using the official template and tags; not published.
+- Public code: [https://github.com/Kartik2004sharma/practice-room](https://github.com/Kartik2004sharma/practice-room). Public landing page and MP4: [https://kartik2004sharma.github.io/practice-room/](https://kartik2004sharma.github.io/practice-room/). Owner authorized publication October 3. GitHub Pages build completed; both URLs returned HTTP 200. Hosted video metadata verified: 265.64 seconds, 1280×720, with no browser page errors.
+- DEV submission: [published October 3](https://dev.to/kartik2004sharma/practice-room-a-private-gemma-interview-coach-for-a-friend-3k58), with devchallenge, weekendchallenge and hf26challenge tags and Fully Autonomous AI disclosure. Publication confirmed on the resulting article page. Organizer eligibility and acceptance are not yet confirmed.
 - Final acceptance/eligibility: owner's review and organizers' decision. Challenge deadline confirmed from the official page: October 5, 06:59 UTC / 12:29 PM IST.
+
+## Public landing-page verification
+
+October 3: executed fresh Chromium checks at 375×812, 768×1024 and 1280×900. No page errors, no horizontal overflow and zero axe violations at all three sizes. Mobile screenshot manually reviewed; public page and actual video metadata verified after deployment. Design-hook findings for tiny text and contrast were addressed by increasing text sizes and strengthening secondary contrast; no suppressions added and none left standing. Only documentation and the static showcase changed; the verified practice-app implementation was preserved.
