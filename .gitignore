@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.runtime/
+test-results/
+playwright-report/
+.env
+evidence/model-smoke.json
+evidence/demo-raw/
+evidence/*.webm
+evidence/*.mp4
