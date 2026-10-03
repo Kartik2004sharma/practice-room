@@ -35,3 +35,11 @@
 - Added privacy-safe model runtime launcher (loopback, cloud/history/content-debug logging disabled), and corrected Vite development CSP for its local scripts/styles/websocket. Production CSP unchanged.
 - Server tests expanded with a substantive excerpt-schema assertion: 5/5 passed. Development-server browser smoke rendered with zero page/console errors.
 - QAT download repeatedly stalled across all parts, with progress rolling back. Cancelled that transfer and switched to the official smaller `gemma3:4b` Q4_K_M tag for the same final 4B evaluation. This is a setup recovery before inference, not another model-quality test or a lowered gate.
+
+## Iteration 5 — final acceptance and delivery
+
+- Official gemma3:4b Q4_K_M installed and set as the normal default. Real smoke passed with actual question and feedback, an exact supporting answer excerpt and no invented candidate experience. No fallback was used.
+- Final lint, types and production build passed; server 5/5, browser 15/15, standalone axe and nine visual comparisons passed. No acceptance criteria were weakened.
+- Independent judge inspected the final 4B sample and accepted basic coaching quality, with limits: the improvement could better address the missing decision reasoning and the structure score was harsh. One synthetic sample cannot establish broad coaching accuracy or interview outcomes.
+- Real 4B browser recording exercised answer coaching, next question, skip, early recap, saved review and deletion with zero page errors. Media inspection caught a blank lead-in and full-page screenshot resize artifacts; recording screenshots were changed to viewport captures before a fresh actual-model recording. This is a media capture repair, with app behavior unchanged.
+- Source, privacy/setup instructions, verification evidence and the official DEV submission draft are prepared locally. Friend feedback and external publication remain owner-controlled gates.

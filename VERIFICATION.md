@@ -15,8 +15,8 @@ Last status recorded October 3, 2026. This document separates executed technical
 | Remote-request guard                       | Passed                                                          | Canary job and answer; all browser requests remain 127.0.0.1, production CSP and fixed loopback model URL inspected separately |
 | Development server smoke                   | Passed                                                          | Production-like local API with Vite; UI rendered at port 3002, no page/console errors                                          |
 | `npm run test:model`, initial Gemma 1B     | Format/quote validation eventually passed; **quality rejected** | Actual inference inspected; no scripted output. Early failures and unsuitable claims are recorded in ITERATIONS.md             |
-| Larger Gemma quality/performance           | Pending download and real check                                 | Final permitted model-quality repair; not yet a pass                                                                           |
-| Real-model video                           | Final capture pending                                           | Initial 1B flow capture worked, but rejected coaching quality prevents treating it as final demo                               |
+| Larger Gemma quality/performance           | Passed actual local smoke; sample manually inspected                                 | `gemma3:4b` Q4_K_M, exact answer excerpt, concrete strength/improvement/suggestion, no invented experience. One sample is not an exhaustive quality evaluation.                                                                           |
+| Real-model video                           | Passed actual 4B capture and export inspection                  | Synthetic sample; coaching, advance, skip, early recap, review and deletion; no follow-up offered; zero page errors. See evidence/DEMO.md. |
 | Independent judge                          | Reviewed; identified retry bug now repaired                     | Read-only code/privacy/adapter review, lint/types/API checks and follow-up approval                                            |
 
 ## Behavioral coverage
@@ -30,6 +30,8 @@ The deterministic adapter intentionally does not prove Gemma quality. Model test
 Reviewed mobile and desktop screens for reading order, spacing and overlapping controls. The keyboard test exercised visible focus, labels and transitions through setup, answer, feedback and recap. Subsequent focus inspection moved new feedback focus to the coaching heading and enabled the skip target. Axe checked contrast automatically, and paper/ink/teal text/actions were visually reviewed. Live regions provide status/error announcements. This is not a full screen-reader/device certification; Safari, Firefox and an actual friend's device remain untested.
 
 Independent review confirmed: app/runtime target loopback, input/output validation, one concurrent server generation, three total attempts, 90-second total bound, no content logs/remote assets, localStorage deletion and isolated test adapter. It also cautioned that exact quote validation does not prove every generative claim true. That caution motivated inspecting and rejecting the 1B coaching rather than accepting schema success alone.
+
+The judge inspected the final real 4B sample and accepted basic coaching quality: a relevant question, an answer-specific strength, exact supporting evidence and an actionable invitation without invented experience or a hiring prediction. It also found the improvement could focus more directly on missing decision reasoning, and the structure score was harsh. These limits remain visible; one synthetic sample does not establish broad accuracy. Actual inference can be slow on the available 8 GB M1, and requests can reach the bounded timeout.
 
 ## Outstanding owner-controlled gates
 

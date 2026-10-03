@@ -16,17 +16,21 @@ I intentionally label rubric scores as coaching aids. The app does not estimate 
 
 ## Demo
 
+[Local inspected recording](evidence/practice-room-demo.mp4) · [Captured scope and limits](evidence/DEMO.md).
+
 **Owner action before publishing:** upload the inspected actual-model recording in `evidence/practice-room-demo.mp4` to an approved location and insert its real link here. The local working app is http://127.0.0.1:3000; that loopback address is not a public deployment.
 
 The recording uses labeled synthetic candidate text. Questions and feedback come from the actual local Gemma model, not browser-test fixtures. See the final demo/verification notes for exactly which steps were captured.
 
 ## Code
 
+[Local source and setup guide](README.md) · [Executed verification](VERIFICATION.md).
+
 **Owner action before publishing:** publish the new `practice-room` repository and insert its real code URL here. No repository URL is invented. The code and setup guide are prepared locally.
 
 ## How I Built It
 
-I started this new project on October 3, 2026, within the challenge's published entry period. React and TypeScript provide a small interview studio; an Express route on the same machine calls Ollama. I started with Gemma 3 1B on the available Apple M1 with 8 GB memory, then rejected its coaching quality after inspecting real output. The configured model is now `gemma3:4b`; final inference and quality verification are still pending and must be confirmed before publication.
+I started this new project on October 3, 2026, within the challenge's published entry period. React and TypeScript provide a small interview studio; an Express route on the same machine calls Ollama. I started with Gemma 3 1B on the available Apple M1 with 8 GB memory, then rejected its coaching quality after inspecting real output. The final model is `gemma3:4b` Q4_K_M. It produced a validated question and answer-grounded coaching in the separate real-model smoke check. I inspected the output for quality rather than treating schema success alone as enough.
 
 Open-weight AI is central: Gemma generates each interview question, reads each submitted answer and produces answer-specific coaching and an optional follow-up. Strict schemas validate the result, and quoted evidence must actually occur in the answer. After at most two repair generations, malformed output produces a recoverable error rather than fake coaching. Recaps reuse those coaching notes locally.
 

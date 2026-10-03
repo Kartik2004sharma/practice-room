@@ -34,7 +34,7 @@ try {
     .getByRole("button", { name: "Enter the practice room" })
     .scrollIntoViewIfNeeded();
   await page.waitForTimeout(1600);
-  await page.screenshot({ path: "evidence/real-setup.png", fullPage: true });
+  await page.screenshot({ path: "evidence/real-setup.png", fullPage: false });
   await page.getByRole("button", { name: "Enter the practice room" }).click();
   await page
     .getByText("Question 1 of 5", { exact: true })
@@ -50,7 +50,7 @@ try {
   await page
     .getByRole("region", { name: "Answer feedback" })
     .waitFor({ timeout: 100000 });
-  await page.screenshot({ path: "evidence/real-feedback.png", fullPage: true });
+  await page.screenshot({ path: "evidence/real-feedback.png", fullPage: false });
   await page.getByText("From your answer").scrollIntoViewIfNeeded();
   await page.waitForTimeout(3500);
   await page.getByText("Coaching aids · 1–5").scrollIntoViewIfNeeded();
@@ -85,7 +85,7 @@ try {
   await page.waitForTimeout(1800);
   await page.getByRole("button", { name: "End session", exact: true }).click();
   await page.getByRole("heading", { name: /Practice done/ }).waitFor();
-  await page.screenshot({ path: "evidence/real-recap.png", fullPage: true });
+  await page.screenshot({ path: "evidence/real-recap.png", fullPage: false });
   await page.waitForTimeout(3000);
   await page.getByRole("button", { name: "Review saved sessions" }).click();
   await page.waitForTimeout(1800);

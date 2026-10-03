@@ -1,0 +1,54 @@
+{
+  "sampleContentOnly": true,
+  "recordedAt": "2026-10-03T16:19:19.070Z",
+  "calls": [
+    {
+      "route": "/api/status",
+      "result": {
+        "available": true,
+        "model": "gemma3:4b",
+        "testOnly": false,
+        "message": "Ready on this device"
+      }
+    },
+    {
+      "route": "/api/question",
+      "result": {
+        "question": "Could you walk me through a project you worked on where you had to make a significant technical decision? What were the options you considered, and how did you arrive at your final choice?",
+        "focus": "projects"
+      }
+    },
+    {
+      "route": "/api/feedback",
+      "result": {
+        "strength": "You clearly articulated the problem and the steps you took to resolve it, including the creation of a failing test.",
+        "improvement": "Consider briefly mentioning the specific TypeScript features you utilized to address the filtering logic.",
+        "suggestion": "Could you elaborate on the TypeScript features used?",
+        "evidence": "When an empty list crashed the view, I explained the problem to my teammate, added a failing test and fixed the condition.",
+        "structure": null,
+        "followUp": null,
+        "rubric": {
+          "relevance": 3,
+          "structure": 1,
+          "specificity": 2,
+          "clarity": 4
+        }
+      }
+    },
+    {
+      "route": "/api/question",
+      "result": {
+        "question": "Thinking about a time you encountered a bug in your code that was difficult to track down, what was your process for isolating and resolving it? Please describe the steps you took and any specific tools or techniques you found helpful.",
+        "focus": "problem-solving"
+      }
+    },
+    {
+      "route": "/api/question",
+      "result": {
+        "question": "Describe a situation where you had to work with a teammate who had a different approach to solving a problem than you did. How did you navigate that difference to achieve a successful outcome?",
+        "focus": "teamwork"
+      }
+    }
+  ],
+  "browserErrors": []
+}

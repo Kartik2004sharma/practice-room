@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-10-03T15:58:37.465Z",
+  "status": {
+    "available": true,
+    "model": "gemma3:4b",
+    "testOnly": false,
+    "message": "Ready on this device"
+  },
+  "profile": {
+    "role": "Junior software engineer",
+    "job": "Sample job description: explain projects, debug code, and collaborate on TypeScript applications.",
+    "type": "mixed"
+  },
+  "question": {
+    "question": "Let's talk about a project you've worked on where you had to make a significant technical decision. Can you describe the situation, the options you considered, and the reasoning behind the choice you ultimately made?",
+    "focus": "projects"
+  },
+  "answer": "Sample candidate answer: I built a task tracker for a class project. I implemented filtering in TypeScript. When the empty list broke the view, I wrote a failing test, fixed the condition, and verified the empty state. I learned to test boundary cases before adding features.",
+  "feedback": {
+    "strength": "You clearly articulated the problem you encountered with the empty list and the steps you took to resolve it.",
+    "improvement": "Consider briefly mentioning the specific TypeScript features you utilized beyond just 'filtering' to demonstrate your technical depth.",
+    "suggestion": "Would you like to elaborate on the TypeScript features you leveraged, such as specific data structures or testing methodologies?",
+    "evidence": "When the empty list broke the view, I wrote a failing test, fixed the condition, and verified the empty state.",
+    "structure": null,
+    "followUp": null,
+    "rubric": {
+      "relevance": 3,
+      "structure": 1,
+      "specificity": 2,
+      "clarity": 4
+    }
+  },
+  "followUpFeedback": null
+}

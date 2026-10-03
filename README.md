@@ -27,7 +27,7 @@ Convenience commands: after `npm ci`, `npm run model:serve` starts either the pr
 
 ### Runtime already prepared on this machine
 
-An ignored `.runtime/` directory contains the official Ollama **v0.35.1** Darwin runtime and the downloaded model. The default global Ollama model directory is not used by this prepared runtime. Start it from this project directory:
+An ignored `.runtime/` directory contains the official Ollama **v0.35.1** Darwin runtime and the downloaded model. Both evaluated 1B and selected 4B weights are in the project-local model directory; the default global Ollama model directory is not used by this prepared runtime. Start it from this project directory:
 
 ```sh
 OLLAMA_NO_CLOUD=1 OLLAMA_NOHISTORY=1 OLLAMA_HOST=127.0.0.1:11434 OLLAMA_MODELS="$PWD/.runtime/models" .runtime/ollama serve
@@ -37,7 +37,7 @@ If that runtime is already running, do not start another on port 11434. These ig
 
 ## Exactly where Gemma is used
 
-Configured instruct model: **`gemma3:4b`**, GGUF **Q4_K_M**, selected from the current [official Ollama library](https://ollama.com/library/gemma3:4b). Download and final quality/performance checks are pending; the app shows unavailable until installed. The initial **`gemma3:1b`** (digest `8648f39daa8fbf5b18c7b4e6a8fb4990c692751d49917417b8842ca5758e7ffc`) was actually run but rejected for coaching quality. Model weights have Gemma's own terms; the code's MIT license does not replace them.
+Configured instruct model: **`gemma3:4b`**, GGUF **Q4_K_M**, selected from the current [official Ollama library](https://ollama.com/library/gemma3:4b). Installed and smoke-checked locally on October 3. Exact installed digest: `a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a`; 4.3B parameters, 3,338,801,804 bytes. Actual generated feedback quoted the sample debugging steps and offered a concrete technical-detail improvement. The initial **`gemma3:1b`** (digest `8648f39daa8fbf5b18c7b4e6a8fb4990c692751d49917417b8842ca5758e7ffc`) was actually run but rejected for coaching quality. Model weights have Gemma's own terms; the code's MIT license does not replace them.
 
 1. `POST /api/question`: Gemma generates the next role/type/job-aware question; previous question texts help avoid repetition.
 2. `POST /api/feedback`: Gemma reads the submitted question and answer and generates strength, improvement, suggestion, evidence, four rubric scores, optional structure and one optional follow-up. Its per-request structured schema limits evidence to excerpts from the actual submitted answer, then validates the exact substring again.
